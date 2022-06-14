@@ -16,9 +16,11 @@ compiler:
 networks:
   kovan:
     eth_usd_price_feed: '0x9326BFA02ADD2366b30bacB125260Af641031331'
+    randomness_feed: ''
     verify: False
   mainnet-fork-dev:
     eth_usd_price_feed: '0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419'
+    randomness_feed: ''
     verify: False
   local-ganache:
     verify: False
