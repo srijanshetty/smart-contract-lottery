@@ -14,13 +14,16 @@ compiler:
       - '@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.6.0'
 
 networks:
+  default: development
   kovan:
     eth_usd_price_feed: '0x9326BFA02ADD2366b30bacB125260Af641031331'
-    randomness_feed: ''
+    vrf_coordinator: '0xa36085F69e2889c224210F603D836748e7dC0088'
+    link_token: '0xdD3782915140c8f3b190B5D67eAc6dc5760C46E9'
     verify: False
   mainnet-fork-dev:
     eth_usd_price_feed: '0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419'
-    randomness_feed: ''
+    vrf_coordinator: '0x514910771af9ca656af840dff83e8264ecf986ca'
+    link_token: '0x271682DEB8C4E0901D1a1550aD2e64D568E69909'
     verify: False
   local-ganache:
     verify: False

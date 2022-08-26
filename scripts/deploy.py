@@ -1,9 +1,16 @@
+"""
+Deploy the contract to various networks
+"""
 from brownie import config, network, Lottery
 
 from scripts.helpers import get_account, get_price_feed_address
 
 
 def deploy():
+    """
+    Deploy the contract to various networks
+    """
+
     # Get variables
     account = get_account()
     current_network = network.show_active()
@@ -21,4 +28,7 @@ def deploy():
 
 
 def main():
+    """
+    Just serves for redirection
+    """
     deploy()
